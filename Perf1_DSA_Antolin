@@ -6,7 +6,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
 https://javascript.info/variables
 
 2. Concept of Falsy Values in JavaScript
-Falsy values in JavaScript are values that act like false in conditions. Some examples are 0, "" (empty string), and null. If you use if (0), the code won’t run because 0 is falsy. The same happens with if ("") since an empty string means false. null is also falsy, so if (null) won’t work either. These values are useful when checking if a variable has a real value or is empty.
+Falsy values in JavaScript are values that act like false when used in conditions. If a falsy value is inside an if statement, the code won’t run because JavaScript sees it as false. Some common falsy values are 0, "" (empty string), null, undefined, NaN, and false. These values are useful when checking if a variable has real data or not. Knowing them helps avoid mistakes when working with user input or missing values.
+examples:
+0 is falsy, so if you write if (0), the code inside won’t run.
+An empty string ("") is also falsy, so if ("") will not work because it's seen as false.
+null is falsy, so using if (null) will make the condition fail. 
 
 references:
 https://www.w3schools.com/js/js_booleans.asp
